@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashmala's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>       
+    </header>
+    <div id="home" class="home">
+        <h1 class="intro">Hi, I'm <strong>Kashmala Ahmad,</strong></h1>
+          <h2 class="intro">another passionate Software engineer.</h2>
+        <p>My diverse roles, from project development to teaching assistant and virtual assistant for eBay, 
+            highlight my adaptability, <br>effective communication, and commitment to continuous learning and mentorship</p>
+</div>
+<div id="aboutMe" class="aboutMe">
+    <div class="Text">
+        <h2><b>More About Me</b></h2>
+        <p>
+            I am a passionate <span class="languages" style="font-weight: bolder; font-size: large;">C++</span> programmer with a strong background in problem-solving, currently pursuing a BS in Software Engineering. 
+            With experience in developing diverse projects, including games and management systems, I have honed my problem-solving and logic-building skills.
+            Let's create something exceptional together. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias veniam, assumenda consequuntur neque et blanditiis! Ducimus beatae consequatur doloremque ullam! Est quo, officiis molestias dolore culpa esse aliquam obcaecati sed!
+        </p>
+    </div>
+    <div  class="cv">
+        <button id="downloadCV">Download CV</button>
+
+    </div>
+</div>
+<div  id="skills" class="skills">
+    <h1>Languages & Skills</h1>
+    <div class="skills-container">
+        <div class="languages">
+            <h2 style="padding-left:70px">Languages</h2>
+            <ul>
+                <li>C++</li>
+                <div class="progress-bar"><div class="progress" data-percentage="90"></div></div>
+                <li>C</li>
+                <div class="progress-bar"><div class="progress" data-percentage="80"></div></div>
+                <li>C#</li>
+                <div class="progress-bar"><div class="progress" data-percentage="75"></div></div>
+                <li>Java</li>
+                <div class="progress-bar"><div class="progress" data-percentage="90"></div></div>
+                <li>Haskell</li>
+                <div class="progress-bar"><div class="progress" data-percentage="60"></div></div>
+                <li>Python</li>
+                <div class="progress-bar"><div class="progress" data-percentage="30"></div></div>
+                <li>JavaScript</li>
+                <div class="progress-bar"><div class="progress" data-percentage="40"></div></div>
+            </ul>
+        </div>
+        <div class="software-skills">
+            <h2 style="margin:50px;">Skills</h2>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Critical Thinking</li>
+                <li>Time Management</li>
+                <li>Version Control (Git)</li>
+                <br>
+                <li>Agile Methodology</li>
+                <li>Database Management</li>
+                <li>Debugging and Testing</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div id="contact" class="contact-form-section">
+            <h3>Contact Me</h3>
+            <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="tel" id="phone" placeholder="Your Phone" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

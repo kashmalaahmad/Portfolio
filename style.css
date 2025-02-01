@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px 100px 10px 700px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: cornsilk;
+}
+
+nav ul li {
+    margin: 5px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: cornsilk;
+    transition: 0.3s;
+}
+
+.navbar ul li a.active {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 50px;
+    line-height: 5px;
+    background-image: url('assets/16175898_rm118-ken-09a.jpg');
+    color: beige;
+}
+
+.home h1,
+.home h2,
+.home p {
+    opacity: 0;
+    animation: fadeSlide 1.5s ease-in-out forwards;
+}
+
+.home h1 {
+    animation-delay: 0s;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home h2 {
+    animation-delay: 0.8s;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.home p {
+    animation-delay: 1.5s;
+    line-height: 20px;
+}
+.aboutMe {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 50px;
+
+    box-sizing: border-box;
+    background-image:url('assets/14730071_rm118-ken-12.jpg');
+    background-size: cover;
+}
+
+.aboutMe .Text {
+    margin: 10px 170px;
+    width: 50%;
+    height: 70%;
+    color: white;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: large;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+.aboutMe .cv {
+    margin: 10px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:30px 150px;
+    padding:20px;
+  
+}
+.aboutMe .cv button
+{
+margin-top:0px;
+ margin-left:20px;
+    background-color:tan;
+    color:white;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5%;
+
+}
+.skills {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #677883;
+    background-size: cover;
+    color:white;
+
+}
+
+.skills h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.languages, .software-skills {
+    width: 45%;
+}
+.progress-bar {
+    width: 50%;
+  background-color:transparent;
+  border:2px solid rgb(43, 41, 41);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+.progress {
+    height: 100%;
+    width: 0;
+    background-color:#91969e;
+    transition: width 5s ease-in-out;
+}
+.languages h2, .software-skills h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.languages ul, .software-skills ul {
+    list-style: none;
+    padding: 10px;
+    margin:50px;
+}
+
+.languages li, .software-skills li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+
+}
+
+.contact-form-section {
+    background-color:#91969e;
+    padding: 30px;
+    text-align: center;
+    width:97%;
+}
+
+.contact-form-section h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-form-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:40px 70px;
+}
+
+#contactForm button:hover {
+    background-color: #45a049;
+}
